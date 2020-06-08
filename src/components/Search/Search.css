@@ -1,18 +1,31 @@
 .Search {
     border-radius: 40px;
-    position: relative;
     border: 1px solid #4F9BE0;
-    box-sizing: border-box;
-    width: 626px;
-    height: 70px;
-    top: 80vh;
-    left: 65vh;
-    padding:18px 52px 10px;
+    width: 500px;
+    height: 30px;
+    padding: 20px 30px 20px 30px;
+    font-size: 30px;
 }
 
-input::placeholder {
+::placeholder {
     color: #8D8D8D;
     font-size: 36px;
     font-family: 'Tajawal', sans-serif;
-    padding: 10px;
+    margin-top: 10px
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+.link{
+    position:absolute;
+    background: none;
+    border: none;
+    right: 20px;
+    top:10px;
+}
+
+.material-icons.md-48{
+    font-size: 48px
 }

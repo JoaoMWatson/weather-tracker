@@ -11,7 +11,9 @@ function App() {
       <div className="container">
         <Header />
       </div>
-      <Search />
+      <div className="footer">
+        <Search />
+      </div>
     </div>
   );
 }

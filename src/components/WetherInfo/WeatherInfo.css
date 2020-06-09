@@ -1,0 +1,52 @@
+.weather-info{
+    min-width: 390px;
+    min-height: 440px;
+    background-color: #D3E3EA;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+p{
+    font-family: 'Tajawal', sans-serif;
+    color: #827290;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.humidade{
+    margin-top: 40px;
+}
+
+.vento{
+    margin-top: 20px
+}
+
+.vento>p{
+    margin-bottom:10px;
+}
+
+.sol{
+    margin-top: 10px;
+}
+
+.sol>p{
+    margin-bottom: 10px;
+}
+
+.paragrafo{
+    margin-left: 30px;
+}
+
+.linha{
+    border:1px solid #7A6989;
+    box-shadow:5px 5px 30px rgb(122, 105,137,25)
+}
+
+.bottom-hr{
+    width: 50px;
+}
+
+.top-hr{
+    width: 150px
+}

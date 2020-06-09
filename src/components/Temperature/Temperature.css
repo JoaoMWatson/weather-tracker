@@ -1,0 +1,27 @@
+.temperature-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 560px;
+}
+
+.temp{
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+small{
+    font-size: 30px;
+}
+
+.material-icons.md-red{
+    color: #F1512E
+}
+
+.material-icons.md-blue{
+    color: #1BA7E3;
+}
+
+.meterial-icons.md-48{
+    font-size: 48px;
+}

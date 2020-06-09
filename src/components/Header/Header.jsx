@@ -1,13 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 
-import './Header.css';
+import "./Header.css"
 
-export default function Header() {
-    return(
-        <div className="Header"> 
-            <h1>
-                São Paulo - Jardim Taquaral
-            </h1>
-        </div>
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return (
+      <div className="Header">
+        <h1>São Paulo - Jardim Taquaral</h1>
+      </div>
     );
+  }
 }
+
+export default Header;

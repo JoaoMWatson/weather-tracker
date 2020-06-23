@@ -15,7 +15,7 @@ function App() {
       load()
     }, []
     )
-
+ 
   async function load(){
     try{
       const resposta = await axios.get("api.openweathermap.org/data/2.5/weather?q=São Paulo,br&units=metric&lang=pt_br&appid=b5a672b8851da776d23772baee6eac92")

@@ -1,53 +1,66 @@
-.weather-info{
-    min-width: 390px;
-    min-height: 440px;
-    background-color: #D3E3EA;
-    font-size: 20px;
-    border-radius: 50px;
-    
+.weather-info {
+  min-width: 390px;
+  min-height: 490px;
+  background-color: #d3e3ea;
+  font-size: 20px;
+  border-radius: 50px;
+  margin-bottom: 20px;
 }
 
-p{
-    font-family: 'Tajawal', sans-serif;
-    color: #827290;
-    font-size: 35px;
-    font-weight: 600;
-    margin: 0;
+p {
+  font-family: "Tajawal", sans-serif;
+  color: #827290;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
 }
 
-.humidade{
-    margin-top: 40px;
+.temperatura-atual{
+  margin-top: 30px;
+ 
 }
 
-.vento{
-    margin-top: 20px
+.temperatura-atual > p{
+  margin-bottom: 10px;
+  color:#755096;
+  font-weight: 900;
 }
 
-.vento>p{
-    margin-bottom:10px;
+.humidade {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.sol{
-    margin-top: 10px;
+.vento {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.sol>p{
-    margin-bottom: 10px;
+.vento > p {
+  margin-bottom: 10px;
 }
 
-.paragrafo{
-    margin-left: 30px;
+.sol {
+  margin-top: 20px;
 }
 
-.linha{
-    border:1px solid #7A6989;
-    box-shadow:5px 5px 30px rgb(122, 105,137,25)
+.sol > p {
+  margin-bottom: 10px;
 }
 
-.bottom-hr{
-    width: 50px;
+.paragrafo {
+  margin-left: 30px;
 }
 
-.top-hr{
-    width: 150px
+.linha {
+  border: 1px solid #7a6989;
+  box-shadow: 5px 5px 30px rgb(122, 105, 137, 25);
+}
+
+.bottom-hr {
+  width: 50px;
+}
+
+.top-hr {
+  width: 150px;
 }

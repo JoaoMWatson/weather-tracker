@@ -10,15 +10,20 @@ class WeatherInfo extends Component {
   render() {
     return (
       <div className="weather-info">
+        <div className="temperatura-atual paragrafo">
+          <p>Atual: 24°C</p>
+          <p>Sensacão termina: 20°C</p>
+        </div>
+        <hr className="linha top-hr"></hr>
+        <hr className="linha bottom-hr"></hr>
         <div className="humidade paragrafo">
           <p>Humidade: 23%</p>
         </div>
         <hr className="linha top-hr"></hr>
         <hr className="linha bottom-hr"></hr>
         <div className="vento paragrafo">
-          <p>Velocidade: 20km/h</p>
-          <p>Vento: teste</p>
-          <p>Direcão: Leste</p>
+          <p>Velocidade: 3,6km/h</p>
+          <p>Direcão: 123 graus</p>
         </div>
         <hr className="linha top-hr"></hr>
         <hr className="linha bottom-hr"></hr>

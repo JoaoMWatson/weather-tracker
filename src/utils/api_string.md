@@ -27,3 +27,4 @@
             icon={weather.weather.icon}
             tempMin={weather.main.temp_min}
             tempMax={weather.main.temp_max}
+            

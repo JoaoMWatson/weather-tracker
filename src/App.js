@@ -8,35 +8,43 @@ import WeatherInfo from "./components/WetherInfo/WeatherInfo";
 
 import "./App.css";
 
+let url =
+  "https://api.openweathermap.org/data/2.5/weather?q=São Paulo,br&units=metric&lang=pt_br&appid=b5a672b8851da776d23772baee6eac92";
+
 function App() {
-  const [weather, setWeather] = useState([]);
+  const [weather, setWeather] = useState({ main: {}, wind: {}, sys: {} , weather: {}});
 
-  async function load() {
-    try {
-      const resposta = await axios.get(
-        "https://api.openweathermap.org/data/2.5/weather?q=São Paulo,br&units=metric&lang=pt_br&appid=b5a672b8851da776d23772baee6eac92"
-      );
-      setWeather(resposta.data);
-      console.log(resposta);
-    } catch (error) {
-      console.log(error);
+  useEffect(() => {
+    async function fetchData() {
+      let response = await axios.get(url);
+      setWeather(response.data);
     }
-  }
-
-  useEffect(() => load(), []);
+    fetchData();
+  }, []);
 
   return (
     <div className="App">
+      {console.log("aaaa", weather)}
       <div className="container">
         <div className="row1">
-          <Header city={weather.name} />
+          <Header name={weather.name} />
         </div>
         <div className="row2">
           <WeatherInfo
-            mainTemp={weather.temp}
-            
+            mainTemp={weather.main.temp}
+            feelsLike={weather.main.feels_like}
+            humidity={weather.main.humidity}
+            speed={weather.wind.speed}
+            direction={weather.wind.deg}
+            sunrise={weather.sys.sunrise}
+            sunset={weather.sys.sunset}
           />
-          <Temperature />
+          <Temperature
+            desc={weather.weather.description}
+            icon={weather.weather.icon}
+            tempMin={weather.main.temp_min}
+            tempMax={weather.main.temp_max}
+          />
         </div>
       </div>
 
